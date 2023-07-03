@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+*{
+  font-family: 'Montserrat Alternates', sans-serif !important;
+}
+p,h1,h2,h3,h4,h6,h5{
+  margin: 0;
+}
+input {
+      border: 1px solid rgb(203, 203, 203);
+      outline: none;
+
+      &:focus {
+        border: 0;
+        border-left: 1px solid #007e9f !important;
+        border-radius: 0px !important;
+
+      }
+    }
+.mainColor{
+  color: #007e9f;
+
+}
+.BG-mainColor{
+  background-color: #007e9f;
+
+}
+.secColor{
+  color: #2c0257;
+}
+.BG-secColor{
+  background-color: #2c0257;
+}
+.text-facebook{
+  color: #3a5999;
+}
+.text-twitter{
+  color: #3ea1ec;
+}
+.cursorPointer{
+  cursor: pointer;
+}
+.box-shadow{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.14);
+}
+.transition{
+  transition: 0.5s;
+
+}
+.text-gray{
+color: gray;
+}
+
+.scrollStyle {
+  overflow-y: scroll;
+
+}
+
+.scrollStyle::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+}
+
+
+.scrollStyle::-webkit-scrollbar-track {
+  background-color: #efefef;
+  border-radius: 10px;
+  height: 80% !important;
+  width: 0px;
+}
+
+.scrollStyle::-webkit-scrollbar-thumb {
+  background-color: #d7d7d7;
+  border-radius: 20px;
+  transition: 1s !important;
+  margin-right: 20px !important;
+}
+
+.scrollStyle::-webkit-scrollbar-thumb:hover {
+  background-color: #4b4f74;
+}

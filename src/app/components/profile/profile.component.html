@@ -1,0 +1,185 @@
+<app-nav style=" z-index: 1;" [log]="log"></app-nav>
+<div class="row m-0">
+  <div class="col-2 vh-100 sideNav scrollStyle pt-4 position-fixed">
+    <div class="logo d-flex align-items-center justify-content-between border-bottom pb-4 mb-4">
+      <div class="img"></div>
+      <p>SOFT UI DASHBOARD</p>
+    </div>
+    <div>
+      <ul #myul>
+        <li (click)="active($event,myul)" id="1" class="active">
+          <div class="icone"><i class="bi bi-shop-window"></i></div>Dashboard
+        </li>
+        <li (click)="active($event,myul)" id="2">
+          <div class="icone"><i class="bi bi-building-fill"></i></div>Tables
+        </li>
+        <li (click)="active($event,myul)" id="3">
+          <div class="icone"><i class="bi bi-card-heading"></i></div>Billing
+        </li>
+        <li (click)="active($event,myul)" id="4">
+          <div class="icone"><i class="bi bi-box"></i></div>Virtual Reality
+        </li>
+        <li (click)="active($event,myul)" id="5">
+          <div class="icone"><i class="bi bi-sliders2"></i></div>RTL
+        </li>
+
+      </ul>
+
+    </div>
+    <div>
+      <ul class="myul1">
+        <p>ACCOUNT PAGES</p>
+        <li>
+          <div class="icone"><i class="bi bi-person-circle"></i></div>Profile
+        </li>
+        <li>
+          <div class="icone"><i class="bi bi-at"></i></div>Sign up
+        </li>
+        <li>
+          <div class="icone"><i class="bi bi-door-open"></i></div>Login
+        </li>
+
+
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="col-10 offset-2 vh-100 px-3 right">
+    <div>
+      <div class=" w-100 rounded-4 mt-4 bg position-relative px-4">
+        <div class=" w-100 rounded-4  data row m-0">
+
+          <div class="col-6 d-flex align-items-center ">
+            <div class="userImg rounded-4 me-4"></div>
+            <div>
+              <h5 class=" text-capitalize">ziad almorsy</h5>
+              <p>MEANSTACK Developer</p>
+            </div>
+          </div>
+          <div class="col-6 d-flex align-items-center justify-content-end">
+            <button id="btn1" class=" btn after"><span class="" (click)="change($event)"><i
+                  class="bi bi-app-indicator me-2"></i>App</span></button>
+            <button id="btn2" class=" btn btnStyle"><span class="" (click)="change($event)"><i
+                  class="bi bi-chat-left-text-fill me-2"></i>Message</span></button>
+            <button id="btn3" class=" btn btnStyle"><span class="" (click)="change($event)"><i
+                  class="bi bi-gear-wide-connected me-2"></i>Setting</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" row col-12 m-0 mt-5">
+      <div class="col-4 p-3">
+        <div class="w-100 h-100 bg-white rounded-4 box-shadow p-4">
+          <p class=" fw-bold">ACCOUNT</p>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Email me when someone follows me</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Email me when someone answers on my
+              post...</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Email me when someone mentions me</label>
+          </div>
+
+
+
+
+          <p class="mt-3 mb-4  fw-bold">APPLICATION</p>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">New launches and projects</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Monthly product updates</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Subscribe to newsletter</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 p-3">
+        <div class="w-100 h-100 bg-white rounded-4 box-shadow p-4">
+          <div class=" w-100 d-flex align-items-center justify-content-between">
+            <p class="fw-bold">Profile Information</p>
+            <i class="bi bi-pen cursorPointer"></i>
+          </div>
+          <p class=" py-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore officiis quis
+            expedita ducimus delectus amet ipsam a debitis, voluptas enim sunt? Enim sunt cum quasi fugit sit, expedita
+            a.</p>
+          <div class="data">
+            <p><span class=" fw-bold">full name: </span>Ziad Almorsy</p>
+            <p><span class=" fw-bold">Mobile: </span>0127 0363 116</p>
+            <p><span class=" fw-bold">Email: </span>ziadalmorsy22@gmail.com</p>
+            <p><span class=" fw-bold">Location: </span>EGY</p>
+            <p><span class=" fw-bold">Social: </span>
+              <i class="mx-2 text-facebook bi bi-facebook"></i>
+              <i class="mx-2 text-twitter bi bi-twitter"></i>
+              <i class="mx-2 text-black bi bi-instagram"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 p-3 p3">
+        <div class="w-100 h-100 bg-white rounded-4 box-shadow p-4">
+          <div *ngFor="let item of conversation" class="row m-0 my-3 d-flex align-items-center justify-content-between">
+            <div class="img col-3" [ngStyle]="{'background-image': 'url(' + item.image + ')'}"></div>
+            <div class="col-6 p-0">
+              <p class="name ">{{item.name}}</p>
+              <p class="message">{{item.lastMessage}}</p>
+            </div>
+            <button class="col-3 btn d-flex justify-content-end align-items-center">REPLY</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row col-12 m-0 p-3">
+      <div class=" row col-12  m-0 mt-5 box-shadow py-4 projects rounded-4">
+        <div class="col-12 mb-4">
+          <p class="fw-bold">Project</p>
+          <p>Architects design houses</p>
+        </div>
+        <div class="col-12 d-flex">
+          <div class="col-3 p-2 d-flex flex-column  justify-content-between" *ngFor="let item of projects">
+            <div class="img " [ngStyle]="{'background-image': 'url(' + item.image + ')'}"></div>
+            <div class="py-3 info">
+              <p>{{item.id}}</p>
+              <p class="fw-bold">{{item.name}}</p>
+              <p>{{item.desc}}</p>
+            </div>
+            <div class="view d-flex align-items-center justify-content-between row m-0">
+              <button class="btn col-6">VIEW PROJECT</button>
+              <div class="viewer d-flex align-items-center justify-content-end col-6">
+                <div class="imgs " *ngFor="let item of viewer let i = index"
+                  [ngStyle]="{'background-image': 'url(' + item.image + ')'}" [style.margin-right.px]="i * 15"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class=" col-3 m-2 border rounded-4 d-flex align-items-center justify-content-center fw-bold text-gray flex-column">
+            <i class="bi bi-plus-lg fs-3"></i>
+            <p>NEW PROJECT</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="row col-12 m-0 pt-5">
+      <p class=" col-7">© 2023, made with by <span class=" fw-bold">Creative Tim</span> for a better web.</p>
+      <div class=" col-5">
+        <ul class=" d-flex w-100 text-decoration-none list-unstyled align-items-center justify-content-between">
+          <li>Creative Tim</li>
+          <li>About Us</li>
+          <li>Blog</li>
+          <li>License</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

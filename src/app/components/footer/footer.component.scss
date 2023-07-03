@@ -1,0 +1,14 @@
+.footer {
+  ul {
+    li {
+      cursor: pointer;
+      text-decoration: none;
+      list-style: none;
+      transition: 0.4s;
+
+      &:hover {
+        color: rgb(201, 201, 201);
+      }
+    }
+  }
+}

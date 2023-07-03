@@ -1,0 +1,48 @@
+<section class=" p-3">
+  <div class="header">
+    <app-nav></app-nav>
+    <div style="width: 30%;"
+      class="welcome mx-auto text-white d-flex align-items-center justify-content-center flex-column text-center mt-5">
+      <h1>Welcome</h1>
+      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi vel quo ex dolores.</h6>
+    </div>
+
+    <div class="signUp p-3">
+      <h5 class=" text-center fw-bold my-4">Register With</h5>
+      <div class=" w-100 d-flex align-items-center justify-content-evenly px-3 py-4">
+        <div class="border rounded-3 d-flex align-items-center justify-content-center social text-danger"><i
+            class="bi bi-google"></i></div>
+        <div class="border rounded-3 d-flex align-items-center justify-content-center social text-facebook"><i
+            class="bi bi-facebook"></i></div>
+        <div class="border rounded-3 d-flex align-items-center justify-content-center social"><i
+            class="bi bi-apple"></i></div>
+      </div>
+      <p class=" text-center my-4">or</p>
+      <div class="">
+        <input type="text" class=" w-100 rounded-3 px-3 py-2 my-2" placeholder="Name">
+        <input type="email" class=" w-100 rounded-3 px-3 py-2 my-2" placeholder="Email">
+        <div class="position-relative d-flex align-items-center justify-content-end">
+          <input id="pass" [type]="type" class=" w-100 rounded-3 px-3 py-2 my-2" placeholder="Password">
+          <div (click)="hide()" class=" position-absolute me-3 see secColor"><i class="bi " [ngClass]="see"></i></div>
+        </div>
+        <div class=" d-flex align-items-center">
+
+          <input type="checkbox" class=" me-2">
+
+          <p>
+            I agree the <span class=" fw-bold">Terms and Conditions</span>
+          </p>
+        </div>
+
+
+        <button class="btn BG-mainColor text-white w-100 mt-4">Sign Up</button>
+        <p>
+
+          Already have an account? <span class="   cursorPointer"><a href="login" class="text-decoration-none m-0 ">SIGN IN</a></span>
+        </p>
+      </div>
+
+    </div>
+    <app-footer></app-footer>
+  </div>
+</section>
